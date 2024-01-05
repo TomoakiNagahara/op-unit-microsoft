@@ -34,4 +34,18 @@ class Microsoft implements IF_UNIT
 	 *
 	 */
 	use OP_CORE, OP_CI;
+
+	/** Microsoft Translate
+	 *
+	 */
+	static function Translate()
+	{
+		//	...
+		if(!OP()->Unit()->isInstall('Microsoft_Translate') ){
+			throw new \Exception('Unit of MicrosftTranslate is not install.');
+		}
+
+		//	...
+		return OP()->Unit('Microsoft_Translate');
+	}
 }
