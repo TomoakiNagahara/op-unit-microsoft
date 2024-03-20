@@ -41,7 +41,7 @@ class Microsoft implements IF_UNIT
 	static function Translate()
 	{
 		//	...
-		if(!OP()->Unit()->isInstall('Microsoft_Translate') ){
+		if(!OP()->Unit()->isInstalled('Microsoft_Translate') ){
 			throw new \Exception('Unit of MicrosftTranslate is not install.');
 		}
 
